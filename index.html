@@ -9,21 +9,21 @@
 <body>
 	<div class="col-md-3">
 		<div ng-controller="demo">
-			<label class="checkbox">
+		<!--	<label class="checkbox">
 				<input type="checkbox" ng-model="oneAtATime">
 				Only open one at a time
 			</label>
-
+		-->
 			<accordion close-others="oneAtATime">
 
-				<accordion-group heading="Item 1" is-open="true">
-					The content of Item 1
+				<accordion-group heading="Introduction" is-open="true">
+					This is our group introduction
 				</accordion-group>
 
-				<accordion-group heading={{group.title}} ng-repeat="group in groups">
+			<!--	<accordion-group heading={{group.title}} ng-repeat="group in groups">
 					{{group.content}}
 				</accordion-group>
-
+			-->
 				<accordion-group heading="{{dynamicItem}}">
 					<p>The body of the accordion group grows to fit the contents<p>
 						<button class="btn btn-default btn-sm" ng-click="addItem()">Add New Item</button>
@@ -31,13 +31,13 @@
 				</accordion-group>
 
 
-				<accordion-group is-open="isopen">
+			<!--	<accordion-group is-open="isopen">
 					<accordion-heading>
 						Open and Close 
 					</accordion-heading>
 					Your Content here
 				</accordion-group>
-
+			-->
 
 
 			</accordion>
