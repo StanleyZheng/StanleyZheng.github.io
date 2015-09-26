@@ -1,50 +1,13 @@
-<html ng-app= "myapp">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<script src="js/angular.js"></script>
-	<script src="js/ui-bootstrap-tpls-0.10.0.js"></script>
-	<script src="js/app.js"></script>
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<title>Stanley Zheng</title>
 </head>
 
 <body>
-	<div class="col-md-3">
-		<div ng-controller="demo">
-		<!--	<label class="checkbox">
-				<input type="checkbox" ng-model="oneAtATime">
-				Only open one at a time
-			</label>
-		-->
-			<accordion close-others="oneAtATime">
-
-				<accordion-group heading="Introduction" is-open="true">
-					This is our group introduction
-				</accordion-group>
-
-			<!--	<accordion-group heading={{group.title}} ng-repeat="group in groups">
-					{{group.content}}
-				</accordion-group>
-			-->
-				<accordion-group heading="{{dynamicItem}}">
-					<p>The body of the accordion group grows to fit the contents<p>
-						<button class="btn btn-default btn-sm" ng-click="addItem()">Add New Item</button>
-						<div ng-repeat="item in items">{{item}}</div>
-				</accordion-group>
-
-
-			<!--	<accordion-group is-open="isopen">
-					<accordion-heading>
-						Open and Close 
-					</accordion-heading>
-					Your Content here
-				</accordion-group>
-			-->
-
-
-			</accordion>
-
-		</div>
-
-	</div>
+	<h1 style="align:center">Hello, there.</h1>
 </body>
+
 
 </html>
