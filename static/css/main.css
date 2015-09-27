@@ -1,6 +1,9 @@
 div {
 	overflow: auto;
 }
+h1 {
+	font-variant: small-caps;
+}
 
 #container{
 	width: 95%;
