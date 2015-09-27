@@ -1,0 +1,67 @@
+div {
+	overflow: auto;
+}
+
+#container{
+	width: 95%;
+	position: relative;
+	margin: auto;
+}
+
+#header {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	clear: both;
+	background-color: #efefef;
+}
+
+#footer {
+	position: absolute;
+	right:0;
+	bottom: 0;
+	left: 0;
+	width: 95%;
+	margin: auto;
+	clear: both;
+	background-color: #efefef;
+	text-align: center;
+	border-top: 3px solid;
+}
+
+#mainpage, #projectspage, #thingpage, #aboutpage, #contactpage {
+	width: 90%;
+	height: 80%;
+	position: relative;
+	margin: auto;
+}
+#sectionleft {
+	width: 69%;
+	text-align: left;
+	float: left;
+	border-right: solid 1px;
+}
+#sectionright {
+	width: 30%;
+	text-align: left;	
+	float: right;
+}
+
+#projsection {
+	width: 80%;
+	text-align:left;
+	float:left;
+}
+
+table{
+    width: 90%;	
+    margin: auto;
+    border-bottom: 3px solid;
+}
+table th {
+    width:20%;
+    padding: 15px;
+}
+table th:hover {
+	background-color: #efefef
+}
