@@ -1,64 +1,25 @@
 $(document).ready(function(){
 
 
-	$("#mainpage").show();
-	$("#projectspage").hide();
-	$("#thingpage").hide();
-	$("#aboutpage").hide();
-	$("#contactpage").hide();
+	$("#home-page").show();
+	$("#portfolio-page").hide();
+	$("#about-page").hide();
 
-		
-	$("#navmain").click(function(){
-		$("#mainpage").show();
-		$("#projectspage").hide();
-		$("#thingpage").hide();
-		$("#aboutpage").hide();
-		$("#contactpage").hide();
-
+	//Display different pages for each tab
+	$("#nav-home").click(function(){
+		$("#home-page").show();
+		$("#portfolio-page").hide();
+		$("#about-page").hide();
 	});
-
-	$("#navprojects").click(function(){
-		$("#mainpage").hide();
-		$("#projectspage").show();
-		$("#thingpage").hide();
-		$("#aboutpage").hide();
-		$("#contactpage").hide();
-
+	$("#nav-portfolio").click(function(){
+		$("#home-page").hide();
+		$("#portfolio-page").show();
+		$("#about-page").hide();
 	});
-
-	$("#navthing").click(function(){
-		$("#mainpage").hide();
-		$("#projectspage").hide();
-		$("#thingpage").show();
-		$("#aboutpage").hide();
-		$("#contactpage").hide();
-
+	$("#nav-about").click(function(){
+		$("#home-page").hide();
+		$("#portfolio-page").hide();
+		$("#about-page").show();
 	});
-
-	$("#navabout").click(function(){
-		$("#mainpage").hide();
-		$("#projectspage").hide();
-		$("#thingpage").hide();
-		$("#aboutpage").show();
-		$("#contactpage").hide();
-
-	});
-
-	$("#navcontact").click(function(){
-		$("#mainpage").hide();
-		$("#projectspage").hide();
-		$("#thingpage").hide();
-		$("#aboutpage").hide();
-		$("#contactpage").show();
-
-	});
-
-
-
-
-
-
-
-
 
 });
