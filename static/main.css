@@ -1,0 +1,67 @@
+div {
+	overflow: auto;
+}
+
+body {
+	 -webkit-text-size-adjust:none;
+	 -ms-text-size-adjust:none;
+	 -moz-text-size-adjust:none;
+	 text-size-adjust:none;
+}
+
+#container {
+	width: 95%;
+	position: relative;
+	margin: auto;
+}
+
+#nav-bar table {
+    width: 90%;	
+    margin: auto;
+    border-bottom: 3px solid;
+    cursor: pointer;
+}
+#nav-bar table th {
+    width:20%;
+    padding: 15px;
+    border-radius: 10px;
+    font-variant: small-caps;
+    font-size: 125%;
+    -webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+#nav-bar table th:hover {
+	background-color: #efefef;
+}
+#nav-main {
+    background-color: #efefef;
+}
+
+#main-page, #funfacts-page, #about-page {
+	width: 70%;
+	height: 80%;
+	position: relative;
+	margin: auto;
+	padding-top: 2%;
+    max-width: 600px;
+}
+
+.page-content {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0;
+}
+
+#banner {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+}
