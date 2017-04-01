@@ -759,34 +759,36 @@ function loadFile(evt){
         alert('Load State functionality is not supported by your browser');
         return false;
     }
-    var temp = document.getElementById('uploadFileID')
-    var f = temp.files[0];
-    if (f){
-        var r = new FileReader();
-        r.onload = function(e){
-            var contents = e.target.result;
-            var temp = JSON.parse(contents);
+    if (isRotating == 0){
+        var temp = document.getElementById('uploadFileID')
+        var f = temp.files[0];
+        if (f){
+            var r = new FileReader();
+            r.onload = function(e){
+                var contents = e.target.result;
+                var temp = JSON.parse(contents);
 
-            //update objectsToDraw, basisMatrix, and COLORS_MATRIX
-            objectsToDraw = temp[0];
-            objectsToDraw.forEach(function(obj){
-                obj.rotationMatrix.matrix = true;
-            });
-            
-            basisMatrix = temp[1];
-            basisMatrix.matrix = true;
-            gl.uniformMatrix4fv(basisMatrixLoc, false, flatten(basisMatrix));
+                //update objectsToDraw, basisMatrix, and COLORS_MATRIX
+                objectsToDraw = temp[0];
+                objectsToDraw.forEach(function(obj){
+                    obj.rotationMatrix.matrix = true;
+                });
+                
+                basisMatrix = temp[1];
+                basisMatrix.matrix = true;
+                gl.uniformMatrix4fv(basisMatrixLoc, false, flatten(basisMatrix));
 
-            COLORS_MATRIX = temp[2];
+                COLORS_MATRIX = temp[2];
 
-            //reset currentRotatingIndex before drawing
-            currentRotatingIndex = -1;
-            requestAnimationFrame(draw);
+                //reset currentRotatingIndex before drawing
+                currentRotatingIndex = -1;
+                requestAnimationFrame(draw);
+            }
+            r.readAsText(f);
         }
-        r.readAsText(f);
-    }
-    else {
-        console.log("Failed to load file");
+        else {
+            console.log("Failed to load file");
+        }
     }
 }
 
